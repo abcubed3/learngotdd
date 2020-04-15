@@ -129,3 +129,12 @@ A Mutex is a mutual exclusion lock. The zero value for a Mutex is an unlocked mu
 
 Use channels when passing ownership of data 
 Use mutexes for managing state
+
+
+The context package provides functions to derive new Context values from existing ones. These values form a tree: when a Context is canceled, all Contexts derived from it are also canceled.
+
+When you index strings in Go, you get a byte
+
+RED, GREEN, REFACTOR
+TDD process of write a test & watch it fail (red), write the minimal amount of code to make it work (green) and then refactor.
+The more changes you make while in red, the more likely you are to add more problems, not covered by tests. The idea is to be iteratively writing useful code with small steps, driven by tests so that you don't fall into a rabbit hole for hours.
